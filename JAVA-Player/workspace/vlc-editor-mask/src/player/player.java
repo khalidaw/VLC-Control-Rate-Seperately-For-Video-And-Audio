@@ -26,7 +26,7 @@ import editor.maskEditor;
 
 public class player {
 
-	final static String vlcPath = "/home/vlc/workspace/vlcProject/vlc";
+	final static String vlcPath = ".//..//..//..//VLC-Source//vlc";
 	static JEvalWrapper jeval = new JEvalWrapper();
 
 	public JFrame frame;
