@@ -3,10 +3,12 @@ import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.util.ArrayList;
+import java.io.PrintStream;
 import java.util.Collections;
 import java.util.List;
 
@@ -43,8 +45,11 @@ public class maskEditor {
 	
 	/**
 	 * Launch the application.
+	 * @throws FileNotFoundException 
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
+			PrintStream out = new PrintStream(new FileOutputStream("log.txt"));
+			System.setOut(out);
 			EventQueue.invokeLater(new Runnable() {
 				public void run() {
 					try {
