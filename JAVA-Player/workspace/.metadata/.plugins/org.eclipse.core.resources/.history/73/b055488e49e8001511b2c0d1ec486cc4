@@ -1,0 +1,133 @@
+import java.awt.EventQueue;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import java.awt.Color;
+
+public class maskEditor {
+
+	private JFrame frame;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					maskEditor window = new maskEditor();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 * @throws IOException 
+	 */
+	public maskEditor() throws IOException {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 * @throws IOException 
+	 */
+	private void initialize() throws IOException {
+		final int margenBetweenButtons = 17;
+		
+		frame = new JFrame();
+		frame.getContentPane().setBackground(Color.WHITE);
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		int currentX=0;
+		
+		// play button
+		ImageIcon buttonIcon = getIcons.getPlayButton();
+		
+		JButton btnPlayButton = new JButton(getIcons.getPlayButton());
+		btnPlayButton.setBorder(BorderFactory.createEmptyBorder());
+		btnPlayButton.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+			}
+		});
+		btnPlayButton.setBounds(currentX, 0, buttonIcon.getIconWidth(), buttonIcon.getIconHeight());
+		frame.getContentPane().add(btnPlayButton);
+		
+		currentX += buttonIcon.getIconHeight()+margenBetweenButtons;
+		// pause button
+		buttonIcon = getIcons.getPauseButton();
+		
+		JButton btnPauseButton = new JButton(buttonIcon);
+		btnPauseButton.setBorder(BorderFactory.createEmptyBorder());
+		btnPauseButton.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+			}
+		});
+		btnPauseButton.setBounds(currentX, 0, buttonIcon.getIconWidth(), buttonIcon.getIconHeight());
+		frame.getContentPane().add(btnPauseButton);
+		
+		currentX += buttonIcon.getIconHeight()+margenBetweenButtons;
+
+		// stop button
+		buttonIcon = getIcons.getStopButton();
+		
+		JButton btnStopButton = new JButton(buttonIcon);
+		btnStopButton.setBorder(BorderFactory.createEmptyBorder());
+		btnStopButton.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+			}
+		});
+		btnStopButton.setBounds(currentX, 0, buttonIcon.getIconWidth(), buttonIcon.getIconHeight());
+		frame.getContentPane().add(btnStopButton);
+		
+		currentX += buttonIcon.getIconHeight()+margenBetweenButtons;
+
+		// stop button
+		buttonIcon = getIcons.getFastForwardButton();
+		
+		JButton fastForwardButton = new JButton(buttonIcon);
+		fastForwardButton.setBorder(BorderFactory.createEmptyBorder());
+		fastForwardButton.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+			}
+		});
+		fastForwardButton.setBounds(currentX, 0, buttonIcon.getIconWidth(), buttonIcon.getIconHeight());
+		frame.getContentPane().add(fastForwardButton);
+		
+		currentX += buttonIcon.getIconHeight()+margenBetweenButtons;
+
+		// end button
+		buttonIcon = getIcons.getFastForwardButton();
+		
+		JButton fastForwardButton = new JButton(buttonIcon);
+		fastForwardButton.setBorder(BorderFactory.createEmptyBorder());
+		fastForwardButton.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+			}
+		});
+		fastForwardButton.setBounds(currentX, 0, buttonIcon.getIconWidth(), buttonIcon.getIconHeight());
+		frame.getContentPane().add(fastForwardButton);
+		
+		currentX += buttonIcon.getIconHeight()+margenBetweenButtons;
+
+	}
+}

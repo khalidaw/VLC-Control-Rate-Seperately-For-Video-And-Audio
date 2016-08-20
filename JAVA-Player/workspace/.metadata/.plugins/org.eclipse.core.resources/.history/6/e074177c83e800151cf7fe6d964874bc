@@ -1,0 +1,105 @@
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.logging.Logger;
+
+import javax.swing.JButton;
+import javax.swing.JFormattedTextField;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextArea;
+import javax.swing.SwingUtilities;
+
+
+
+public class CreateDialogFromOptionPane {
+    Logger log = Logger.getLogger("com.prodapt.autotest.gui.design.EditTestData");
+
+
+    public static final JFrame JSONFrame = new JFrame();
+    public final JPanel jPanel = new JPanel();
+
+    JLabel IdLabel = new JLabel("JSON ID*");
+    JLabel DataLabel = new JLabel("JSON Data*");
+    JFormattedTextField JId = new JFormattedTextField("Auto Generated");
+    JTextArea JData = new JTextArea();
+    JButton Cancel = new JButton("Cancel");
+    JButton Add = new JButton("Add");
+
+    public void JsonPage() {
+
+        JSONFrame.getContentPane().add(jPanel);
+        JSONFrame.add(jPanel);
+        JSONFrame.setSize(400, 250);
+        JSONFrame.setResizable(false);
+        JSONFrame.setVisible(false);
+        JSONFrame.setTitle("Add JSON Data");
+        JSONFrame.setLocationRelativeTo(null);
+        jPanel.setLayout(null);
+
+        JData.setWrapStyleWord(true);
+        JId.setEditable(false);
+
+        IdLabel.setBounds(20, 30, 120, 25);
+        JId.setBounds(100, 30, 120, 25);
+        DataLabel.setBounds(20, 60, 120, 25);
+        JData.setBounds(100, 60, 250, 75);
+        Cancel.setBounds(80, 170, 80, 30);
+        Add.setBounds(280, 170, 50, 30);
+
+        jPanel.add(IdLabel);
+        jPanel.add(JId);
+        jPanel.add(DataLabel);
+        jPanel.add(JData);
+        jPanel.add(Cancel);
+        jPanel.add(Add);
+
+        SwingUtilities.updateComponentTreeUI(JSONFrame);
+
+        Cancel.addActionListener(new ActionListener() {
+            @SuppressWarnings("deprecation")
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                JData.setText("");
+                JSONFrame.hide();
+                TestCasePage.testCaseFrame.show();
+            }
+        });
+
+        Add.addActionListener(new ActionListener() {
+            @SuppressWarnings("deprecation")
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    PreparedStatement pStatement = DAOHelper.getInstance()
+                            .createJSON(
+                                    ConnectionClass.getInstance()
+                                            .getConnection());
+                    pStatement.setString(1, null);
+                    if (JData.getText().toString().isEmpty()) {
+                        JOptionPane.showMessageDialog(JSONFrame,
+                                "Must Enter JSON Path");
+                    } else {
+                        // System.out.println(eleSelectBy);
+                        pStatement.setString(2, JData.getText());
+                        pStatement.executeUpdate();
+                        JOptionPane.showMessageDialog(JSONFrame, "!! Added !!");
+                        log.info("JSON Path Added"+JData);
+                        JData.setText("");
+                        JSONFrame.hide();
+                    }
+
+                } catch (SQLException e1) {
+                    JData.setText("");
+                    log.info("Error in Adding JSON Path");
+                    e1.printStackTrace();
+                }
+            }
+        });
+    }
+
+}
+

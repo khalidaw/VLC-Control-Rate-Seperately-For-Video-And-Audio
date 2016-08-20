@@ -1,0 +1,35 @@
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+
+public class getIcons {
+	static int width = 64;
+	static int height = 64;
+	
+	private static ImageIcon getImageFromPath(String path)
+	{
+		BufferedImage buttonIcon;
+		try {
+			buttonIcon = ImageIO.read(new File(path));
+		} catch (IOException e) {
+			return null;
+		}
+		
+		return new ImageIcon((buttonIcon.getScaledInstance(width, height, 0)));
+
+	}
+	
+	static public ImageIcon getPlayButton()
+	{
+		return getImageFromPath("_PNG64/music_play_button.png");
+	}
+	
+	static public ImageIcon getPauseButton()
+	{
+		return getImageFromPath("_PNG64/music_pause_button.png");
+	}
+
+}

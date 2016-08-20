@@ -1,0 +1,8 @@
+
+public class MaskCreator {
+
+	int videoSecondsCounter;
+	int audioSecondsCounter;
+	List<data> points;
+	
+}

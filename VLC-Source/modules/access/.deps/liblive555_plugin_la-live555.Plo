@@ -1,0 +1,828 @@
+access/liblive555_plugin_la-live555.lo: access/live555.cpp \
+ /usr/include/stdc-predef.h ../config.h ../include/vlc_fixups.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h /usr/include/inttypes.h \
+ /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h ../include/vlc_common.h \
+ ../include/vlc_config.h /usr/include/stdlib.h \
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap-16.h /usr/include/xlocale.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/time.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h \
+ /usr/include/x86_64-linux-gnu/bits/sigset.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/select2.h \
+ /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h /usr/include/alloca.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h /usr/include/string.h \
+ /usr/include/x86_64-linux-gnu/bits/string3.h /usr/include/stdio.h \
+ /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio2.h ../include/vlc_mtime.h \
+ ../include/vlc_threads.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h /usr/include/getopt.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h /usr/include/pthread.h \
+ /usr/include/sched.h /usr/include/x86_64-linux-gnu/bits/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/timex.h \
+ /usr/include/x86_64-linux-gnu/bits/setjmp.h /usr/include/semaphore.h \
+ /usr/include/x86_64-linux-gnu/bits/semaphore.h ../include/vlc_arrays.h \
+ ../include/vlc_messages.h ../include/vlc_objects.h \
+ ../include/vlc_variables.h ../include/vlc_main.h \
+ ../include/vlc_configuration.h ../include/vlc_plugin.h \
+ ../include/vlc_input.h ../include/vlc_es.h ../include/vlc_fourcc.h \
+ ../include/vlc_text_style.h ../include/vlc_meta.h ../include/vlc_epg.h \
+ ../include/vlc_events.h ../include/vlc_input_item.h \
+ ../include/vlc_vout_osd.h ../include/vlc_spu.h \
+ ../include/vlc_subpicture.h ../include/vlc_picture.h \
+ ../include/vlc_atomic.h ../include/vlc_demux.h ../include/vlc_stream.h \
+ ../include/vlc_block.h ../include/vlc_es_out.h ../include/vlc_dialog.h \
+ ../include/vlc_url.h ../include/vlc_strings.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h /usr/include/assert.h \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/UsageEnvironment.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/UsageEnvironment_version.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/NetCommon.h \
+ /usr/include/x86_64-linux-gnu/sys/socket.h \
+ /usr/include/x86_64-linux-gnu/sys/uio.h \
+ /usr/include/x86_64-linux-gnu/bits/uio.h \
+ /usr/include/x86_64-linux-gnu/bits/socket.h \
+ /usr/include/x86_64-linux-gnu/bits/socket_type.h \
+ /usr/include/x86_64-linux-gnu/bits/sockaddr.h \
+ /usr/include/x86_64-linux-gnu/asm/socket.h \
+ /usr/include/asm-generic/socket.h \
+ /usr/include/x86_64-linux-gnu/asm/sockios.h \
+ /usr/include/asm-generic/sockios.h \
+ /usr/include/x86_64-linux-gnu/bits/socket2.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/netinet/in.h \
+ /usr/include/x86_64-linux-gnu/bits/in.h /usr/include/arpa/inet.h \
+ /usr/include/netdb.h /usr/include/rpc/netdb.h \
+ /usr/include/x86_64-linux-gnu/bits/siginfo.h \
+ /usr/include/x86_64-linux-gnu/bits/netdb.h /usr/include/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/strings.h /usr/include/ctype.h \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/Boolean.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/strDup.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/BasicUsageEnvironment.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/BasicUsageEnvironment0.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/BasicUsageEnvironment_version.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/DelayQueue.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/GroupsockHelper.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/NetAddress.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/HashTable.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/liveMedia.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2AudioRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AudioRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MultiFramedRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/RTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MediaSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/FramedSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MediaSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/Media.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/liveMedia_version.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/RTPInterface.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/Groupsock.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/groupsock_version.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/NetInterface.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/GroupEId.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MP3ADURTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2VideoRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/VideoRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4ESVideoRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AMRAudioFileSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/FileSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264VideoFileSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264or5VideoFileSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H265VideoFileSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/OggFileSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/BasicUDPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/GSMAudioRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H263plusVideoRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264VideoRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264or5VideoRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/FramedFilter.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H265VideoRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/DVVideoRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MultiFramedRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/RTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/DVVideoRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/DVVideoStreamFramer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264VideoStreamFramer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264or5VideoStreamFramer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEGVideoStreamFramer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H265VideoStreamFramer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264VideoStreamDiscreteFramer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264or5VideoStreamDiscreteFramer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H265VideoStreamDiscreteFramer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/JPEGVideoRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/SimpleRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/uLawAudioFilter.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2IndexFromTransportStream.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2TransportStreamTrickModeFilter.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2TransportStreamIndexFile.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/ByteStreamMultiFileSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/ByteStreamFileSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/FramedFileSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/ByteStreamMemoryBufferSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/BasicUDPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/SimpleRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2AudioRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4LATMAudioRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4LATMAudioRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4ESVideoRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4GenericRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MP3ADURTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/QCELPAudioRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AMRAudioRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AMRAudioSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/JPEGVideoRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/JPEGVideoSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2VideoRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/VorbisAudioRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/TheoraVideoRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/VP8VideoRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/VP9VideoRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2TransportStreamFromPESSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2TransportStreamMultiplexor.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2Demux.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2DemuxedElementaryStream.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2TransportStreamFromESSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2TransportStreamFramer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/ADTSAudioFileSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H261VideoRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H263plusVideoRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264VideoRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H265VideoRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MP3FileSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MP3ADU.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MP3ADUinterleaving.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MP3Transcoder.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MP3ADUTranscoder.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2AudioStreamFramer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H263plusVideoStreamFramer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AC3AudioStreamFramer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AC3AudioRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AC3AudioRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/VorbisAudioRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/TheoraVideoRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/VP8VideoRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/VP9VideoRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4GenericRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2VideoStreamDiscreteFramer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2VideoStreamFramer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4VideoStreamDiscreteFramer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4VideoStreamFramer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/DeviceSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AudioInputDevice.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/WAVAudioFileSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/StreamReplicator.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/RTSPRegisterSender.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/RTSPClient.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MediaSession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/RTCP.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/DigestAuthentication.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/RTSPServer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/GenericMediaServer.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/ServerMediaSession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/RTSPServerSupportingHTTPStreaming.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/TCPStreamSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/SIPClient.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/QuickTimeFileSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/QuickTimeGenericRTPSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AVIFileSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/PassiveServerMediaSubsession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4VideoFileServerMediaSubsession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/FileServerMediaSubsession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/OnDemandServerMediaSubsession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264VideoFileServerMediaSubsession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H265VideoFileServerMediaSubsession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/WAVAudioFileServerMediaSubsession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AMRAudioFileServerMediaSubsession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AMRAudioFileSource.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AMRAudioRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/T140TextRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/TextRTPSink.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MP3AudioFileServerMediaSubsession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2VideoFileServerMediaSubsession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2FileServerDemux.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2TransportFileServerMediaSubsession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H263plusVideoFileServerMediaSubsession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/ADTSAudioFileServerMediaSubsession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/DVVideoFileServerMediaSubsession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AC3AudioFileServerMediaSubsession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2TransportUDPServerMediaSubsession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MatroskaFileServerDemux.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MatroskaFile.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/OggFileServerDemux.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/OggFile.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/ProxyServerMediaSession.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MediaTranscodingTable.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/liveMedia_version.hh \
+ /home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/Base64.hh \
+ access/../access/mms/asf.h \
+ access/../access/mms/../../demux/asf/libasf_guid.h \
+ ../include/vlc_codecs.h
+
+/usr/include/stdc-predef.h:
+
+../config.h:
+
+../include/vlc_fixups.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h:
+
+/usr/include/inttypes.h:
+
+/usr/include/features.h:
+
+/usr/include/x86_64-linux-gnu/sys/cdefs.h:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h:
+
+/usr/include/stdint.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+../include/vlc_common.h:
+
+../include/vlc_config.h:
+
+/usr/include/stdlib.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/usr/include/x86_64-linux-gnu/bits/waitstatus.h:
+
+/usr/include/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/endian.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap.h:
+
+/usr/include/x86_64-linux-gnu/bits/types.h:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/usr/include/x86_64-linux-gnu/bits/byteswap-16.h:
+
+/usr/include/xlocale.h:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/sigset.h:
+
+/usr/include/x86_64-linux-gnu/bits/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
+/usr/include/x86_64-linux-gnu/sys/sysmacros.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/alloca.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h:
+
+/usr/include/string.h:
+
+/usr/include/x86_64-linux-gnu/bits/string3.h:
+
+/usr/include/stdio.h:
+
+/usr/include/libio.h:
+
+/usr/include/_G_config.h:
+
+/usr/include/wchar.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/sys_errlist.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
+../include/vlc_mtime.h:
+
+../include/vlc_threads.h:
+
+/usr/include/unistd.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix_opt.h:
+
+/usr/include/x86_64-linux-gnu/bits/environments.h:
+
+/usr/include/x86_64-linux-gnu/bits/confname.h:
+
+/usr/include/getopt.h:
+
+/usr/include/x86_64-linux-gnu/bits/unistd.h:
+
+/usr/include/pthread.h:
+
+/usr/include/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/sched.h:
+
+/usr/include/x86_64-linux-gnu/bits/timex.h:
+
+/usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/semaphore.h:
+
+/usr/include/x86_64-linux-gnu/bits/semaphore.h:
+
+../include/vlc_arrays.h:
+
+../include/vlc_messages.h:
+
+../include/vlc_objects.h:
+
+../include/vlc_variables.h:
+
+../include/vlc_main.h:
+
+../include/vlc_configuration.h:
+
+../include/vlc_plugin.h:
+
+../include/vlc_input.h:
+
+../include/vlc_es.h:
+
+../include/vlc_fourcc.h:
+
+../include/vlc_text_style.h:
+
+../include/vlc_meta.h:
+
+../include/vlc_epg.h:
+
+../include/vlc_events.h:
+
+../include/vlc_input_item.h:
+
+../include/vlc_vout_osd.h:
+
+../include/vlc_spu.h:
+
+../include/vlc_subpicture.h:
+
+../include/vlc_picture.h:
+
+../include/vlc_atomic.h:
+
+../include/vlc_demux.h:
+
+../include/vlc_stream.h:
+
+../include/vlc_block.h:
+
+../include/vlc_es_out.h:
+
+../include/vlc_dialog.h:
+
+../include/vlc_url.h:
+
+../include/vlc_strings.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h:
+
+/usr/include/limits.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/local_lim.h:
+
+/usr/include/linux/limits.h:
+
+/usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/assert.h:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/UsageEnvironment.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/UsageEnvironment_version.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/NetCommon.h:
+
+/usr/include/x86_64-linux-gnu/sys/socket.h:
+
+/usr/include/x86_64-linux-gnu/sys/uio.h:
+
+/usr/include/x86_64-linux-gnu/bits/uio.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket_type.h:
+
+/usr/include/x86_64-linux-gnu/bits/sockaddr.h:
+
+/usr/include/x86_64-linux-gnu/asm/socket.h:
+
+/usr/include/asm-generic/socket.h:
+
+/usr/include/x86_64-linux-gnu/asm/sockios.h:
+
+/usr/include/asm-generic/sockios.h:
+
+/usr/include/x86_64-linux-gnu/bits/socket2.h:
+
+/usr/include/x86_64-linux-gnu/sys/time.h:
+
+/usr/include/netinet/in.h:
+
+/usr/include/x86_64-linux-gnu/bits/in.h:
+
+/usr/include/arpa/inet.h:
+
+/usr/include/netdb.h:
+
+/usr/include/rpc/netdb.h:
+
+/usr/include/x86_64-linux-gnu/bits/siginfo.h:
+
+/usr/include/x86_64-linux-gnu/bits/netdb.h:
+
+/usr/include/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/linux/errno.h:
+
+/usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/asm-generic/errno.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/strings.h:
+
+/usr/include/ctype.h:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/Boolean.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/strDup.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/BasicUsageEnvironment.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/BasicUsageEnvironment0.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/BasicUsageEnvironment_version.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/DelayQueue.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/GroupsockHelper.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/NetAddress.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/HashTable.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/liveMedia.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2AudioRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AudioRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MultiFramedRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/RTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MediaSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/FramedSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MediaSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/Media.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/liveMedia_version.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/RTPInterface.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/Groupsock.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/groupsock_version.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/NetInterface.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/GroupEId.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MP3ADURTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2VideoRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/VideoRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4ESVideoRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AMRAudioFileSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/FileSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264VideoFileSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264or5VideoFileSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H265VideoFileSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/OggFileSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/BasicUDPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/GSMAudioRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H263plusVideoRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264VideoRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264or5VideoRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/FramedFilter.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H265VideoRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/DVVideoRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MultiFramedRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/RTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/DVVideoRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/DVVideoStreamFramer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264VideoStreamFramer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264or5VideoStreamFramer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEGVideoStreamFramer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H265VideoStreamFramer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264VideoStreamDiscreteFramer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264or5VideoStreamDiscreteFramer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H265VideoStreamDiscreteFramer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/JPEGVideoRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/SimpleRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/uLawAudioFilter.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2IndexFromTransportStream.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2TransportStreamTrickModeFilter.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2TransportStreamIndexFile.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/ByteStreamMultiFileSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/ByteStreamFileSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/FramedFileSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/ByteStreamMemoryBufferSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/BasicUDPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/SimpleRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2AudioRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4LATMAudioRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4LATMAudioRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4ESVideoRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4GenericRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MP3ADURTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/QCELPAudioRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AMRAudioRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AMRAudioSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/JPEGVideoRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/JPEGVideoSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2VideoRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/VorbisAudioRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/TheoraVideoRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/VP8VideoRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/VP9VideoRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2TransportStreamFromPESSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2TransportStreamMultiplexor.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2Demux.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2DemuxedElementaryStream.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2TransportStreamFromESSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2TransportStreamFramer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/ADTSAudioFileSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H261VideoRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H263plusVideoRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264VideoRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H265VideoRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MP3FileSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MP3ADU.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MP3ADUinterleaving.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MP3Transcoder.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MP3ADUTranscoder.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2AudioStreamFramer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H263plusVideoStreamFramer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AC3AudioStreamFramer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AC3AudioRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AC3AudioRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/VorbisAudioRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/TheoraVideoRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/VP8VideoRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/VP9VideoRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4GenericRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2VideoStreamDiscreteFramer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2VideoStreamFramer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4VideoStreamDiscreteFramer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4VideoStreamFramer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/DeviceSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AudioInputDevice.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/WAVAudioFileSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/StreamReplicator.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/RTSPRegisterSender.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/RTSPClient.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MediaSession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/RTCP.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/DigestAuthentication.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/RTSPServer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/GenericMediaServer.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/ServerMediaSession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/RTSPServerSupportingHTTPStreaming.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/TCPStreamSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/SIPClient.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/QuickTimeFileSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/QuickTimeGenericRTPSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AVIFileSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/PassiveServerMediaSubsession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG4VideoFileServerMediaSubsession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/FileServerMediaSubsession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/OnDemandServerMediaSubsession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H264VideoFileServerMediaSubsession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H265VideoFileServerMediaSubsession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/WAVAudioFileServerMediaSubsession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AMRAudioFileServerMediaSubsession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AMRAudioFileSource.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AMRAudioRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/T140TextRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/TextRTPSink.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MP3AudioFileServerMediaSubsession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2VideoFileServerMediaSubsession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG1or2FileServerDemux.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2TransportFileServerMediaSubsession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/H263plusVideoFileServerMediaSubsession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/ADTSAudioFileServerMediaSubsession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/DVVideoFileServerMediaSubsession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/AC3AudioFileServerMediaSubsession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MPEG2TransportUDPServerMediaSubsession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MatroskaFileServerDemux.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MatroskaFile.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/OggFileServerDemux.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/OggFile.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/ProxyServerMediaSession.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/MediaTranscodingTable.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/liveMedia_version.hh:
+
+/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include/Base64.hh:
+
+access/../access/mms/asf.h:
+
+access/../access/mms/../../demux/asf/libasf_guid.h:
+
+../include/vlc_codecs.h:

@@ -1,0 +1,10 @@
+prefix=/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu
+exec_prefix=${prefix}
+libdir=/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/lib
+includedir=/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include
+
+Name: libdvdcss
+Description: DVD access and decryption library.
+Version: 1.4.0
+Libs: -L${libdir} -ldvdcss
+Cflags: -I${includedir} -I${includedir}/dvdcss

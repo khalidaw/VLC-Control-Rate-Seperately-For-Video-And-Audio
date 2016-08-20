@@ -1,0 +1,39 @@
+/**
+ * 
+ */
+
+/**
+ * @author admin
+ *
+ */
+public class syncPoints {
+	enum SyncType
+	{
+		SyncTypeDontWait,
+		SyncTypeWait
+	}
+	
+	public class data
+	{
+		int startInSeconds;
+		int durationInSeconds;
+		float videoRate;
+		float soundRate;
+		SyncType type;
+		
+		@Override
+		public boolean equals(Object obj) {
+			if (obj == null)
+			{
+				return false;
+			}
+			
+			if (obj.getClass() != this.getClass())
+			{
+				return false;
+			}
+			
+			return ((data)obj).startInSeconds == this.startInSeconds;
+		}
+	}
+}

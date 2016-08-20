@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.omg.CORBA_2_3.portable.OutputStream"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.portable.OutputStream"/>
+<fullyQualifiedTypeName name="java.io.OutputStream"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="javax.swing.JLabel"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="SyncPoints"/>
+<fullyQualifiedTypeName name="SyncPoints.data"/>
+<fullyQualifiedTypeName name="SyncPoints.SyncType"/>
+<fullyQualifiedTypeName name="javax.swing.JButton"/>
+<fullyQualifiedTypeName name="javax.swing.tree.DefaultTreeCellEditor.EditorContainer"/>
+<fullyQualifiedTypeName name="maskEditor"/>
+<fullyQualifiedTypeName name="java.awt.Window"/>
+<fullyQualifiedTypeName name="javax.swing.SwingUtilities"/>
+<fullyQualifiedTypeName name="javax.swing.JList"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="javax.swing.text.MaskFormatter"/>
+<fullyQualifiedTypeName name="MaskCreator"/>
+<fullyQualifiedTypeName name="data"/>
+<fullyQualifiedTypeName name="data.SyncType"/>
+<fullyQualifiedTypeName name="junit.framework.Assert"/>
+<fullyQualifiedTypeName name="java.rmi.server.Operation"/>
+<fullyQualifiedTypeName name="editor.data.FunctionType"/>
+<fullyQualifiedTypeName name="net.sourceforge.jeval.Evaluator"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="editor.JEvalWrapper"/>
+<fullyQualifiedTypeName name="net.sourceforge.jeval.function.math.Max"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="editor.SyncPoints"/>
+</qualifiedTypeNameHistroy>

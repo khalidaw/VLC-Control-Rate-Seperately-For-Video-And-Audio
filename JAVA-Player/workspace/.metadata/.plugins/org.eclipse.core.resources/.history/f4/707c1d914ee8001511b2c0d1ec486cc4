@@ -1,0 +1,25 @@
+/**
+ * 
+ */
+
+/**
+ * @author admin
+ *
+ */
+public class syncPoints {
+	
+	// in case of dtx dx
+	enum SyncType
+	{
+		SyncTypeDontWait,
+		SyncTypeWait
+	}
+	
+	public class data
+	{
+		int seconds;
+		float videoRate;
+		float soundRate;
+		SyncType type;
+	}
+}

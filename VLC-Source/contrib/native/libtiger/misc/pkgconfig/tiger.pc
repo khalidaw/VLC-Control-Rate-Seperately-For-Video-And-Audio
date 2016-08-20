@@ -1,0 +1,15 @@
+# This is the pkg-config file for libtiger
+prefix=/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu
+exec_prefix=${prefix}
+libdir=/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/lib
+includedir=/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include
+
+Name: Tiger
+Description: libtiger is a library for rendering Kate streams
+Version: 0.3.1
+URL: http://libtiger.googlecode.com/
+Requires: kate >= 0.1.7 pangocairo
+Conflicts: 
+Libs: -L${libdir} -ltiger
+Libs.private: -lm
+Cflags: -I${includedir}

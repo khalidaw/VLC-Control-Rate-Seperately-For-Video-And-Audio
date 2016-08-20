@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+
+/**
+ * @author admin
+ *
+ */
+public class syncPoints {
+	enum SyncType
+	{
+		SyncTypeDontWait,
+		SyncTypeWait,
+		SyncTypeDT
+	}
+	
+	private Map
+}

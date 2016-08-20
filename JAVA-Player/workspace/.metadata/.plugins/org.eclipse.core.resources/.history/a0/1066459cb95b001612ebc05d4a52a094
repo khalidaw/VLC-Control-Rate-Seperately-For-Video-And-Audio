@@ -1,0 +1,120 @@
+import java.awt.EventQueue;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
+
+public class mainView {
+
+	/**
+	 * UI Constants
+	 */
+	static int width = 900;
+	static int margin_height = 15;
+	static int margin_width = 5;
+	static int textFieldWidth = 50;
+	
+	private JFrame frame;
+
+	
+	static private List<JTextField> startTimes = new ArrayList<JTextField>();
+	static private List<JTextField> endTimes = new ArrayList<JTextField>();
+	static private List<JTextField> rates = new ArrayList<JTextField>();
+
+	
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					mainView window = new mainView();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public mainView() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		/*
+		 * Calculate height
+		 */
+		int height = 2*margin_height*startTimes.size();
+		
+		int heightStart = margin_height;
+		
+		frame = new JFrame();
+		frame.setBounds(100, 100, width, height);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+
+		JLabel startLabel = new JLabel("Start");
+		JLabel endLabel = new JLabel("End");
+		JLabel rateLabel = new JLabel("Rate");
+		JButton addButton = new JButton("+");
+		startLabel.setBounds(0, heightStart, textFieldWidth, margin_height);
+		endLabel.setBounds(margin_width+textFieldWidth, heightStart, textFieldWidth, margin_height);
+		rateLabel.setBounds(2*(margin_width+textFieldWidth), heightStart, textFieldWidth, margin_height);
+		addButton.setBounds(3*(margin_width+textFieldWidth), heightStart, textFieldWidth, margin_height);
+
+		frame.getContentPane().add(startLabel);
+		frame.getContentPane().add(endLabel);
+		frame.getContentPane().add(rateLabel);
+		frame.getContentPane().add(addButton);
+
+		heightStart +=margin_height;
+		
+		int heightIndex = heightStart;
+		for (JTextField jTextField: startTimes) {
+			jTextField.setBounds(0, heightIndex, textFieldWidth, margin_height);
+			frame.getContentPane().add(jTextField);
+		}
+		
+		heightIndex = heightStart;
+		for (JTextField jTextField: startTimes) {
+			jTextField.setBounds(textFieldWidth+margin_width, heightIndex, textFieldWidth, margin_height);
+			frame.getContentPane().add(jTextField);
+		}
+
+		heightIndex = heightStart;
+		for (JTextField jTextField: startTimes) {
+			jTextField.setBounds(2*textFieldWidth+2*margin_width, heightIndex, textFieldWidth, margin_height);
+			frame.getContentPane().add(jTextField);
+		}
+		frame.setVisible(true);
+		final mainView weakself = this;
+		
+		/**
+		 * Button methods
+		 */
+		addButton.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				startTimes.add(new JTextField());
+				endTimes.add(new JTextField());
+				rates.add(new JTextField());
+				weakself.initialize();
+			}
+		});
+	}
+
+}

@@ -1,0 +1,48 @@
+0.3.1 -- 12 november 2008
+  text can now be outlined or shadowed
+  caching now works for vertical text
+  fix return code of tiger_renderer_update mixing 0 and 1
+  ABGR buffers are now supported, in addition to ARGB buffers
+  fix tiger_renderer_set_quality crash when a surface isn't yet set
+  use the quality setting to tweak speed/quality in more cases
+
+0.3.0 - 31 october 2008
+  relicence to LGPL (since Pango is required and is LGPL)
+  support for vertical text
+  support for markers
+  justified text support
+  new bitmap cache to avoid recreating (and leaking) cairo surfaces
+  new tiger_renderer_is_dirty function, to optimize away unnecessary rendering
+  internal caching can now be turned on and off
+  uninstalled pc files now link against static libs rather than libtool ones
+
+0.2.2 - 06 october 2008
+  new tiger_renderer_set_default_background_fill_color function
+  set the pango base direction based on the stream specified direction
+  fix build when doxygen isn't found (Alexis Ballier)
+
+0.2.1 - 29 september 2008
+  fix font mapping mistaking PNG images for paletted images
+  build fix for Cygwin/Mingw32 (yselkowitz/Cygwin Ports project)
+
+0.2.0 - 22 september 2008
+  support for flushing obsolete items on seek
+  draw motions support
+  configure now checks for libkate
+  font mapping support
+  cairo surface leak fix
+  fix clear color using wrong RGB value
+  a full default font description can now be set
+  fix events overlapping for a frame if they follow each other exactly
+
+0.1.2 - 05 september 2008
+  performance improvement for transparent text
+  fix use of uninitialized data
+
+0.1.1 - 27 august 2008
+  fix items being displayed before their presentation time
+  split update so obsolete items can be discarded without tracking kate motions
+  transparent text support
+
+0.1.0 - 18 august 2008
+  First released version

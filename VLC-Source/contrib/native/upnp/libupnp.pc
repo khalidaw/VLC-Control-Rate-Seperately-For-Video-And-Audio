@@ -1,0 +1,11 @@
+prefix=/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu
+exec_prefix=${prefix}
+libdir=/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/lib
+includedir=/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include
+
+Name: libupnp
+Description: Linux SDK for UPnP Devices
+Version: 1.6.19
+Libs: -pthread  -L${libdir} -lupnp -lthreadutil -lixml 
+Cflags: -pthread -I${includedir}/upnp
+

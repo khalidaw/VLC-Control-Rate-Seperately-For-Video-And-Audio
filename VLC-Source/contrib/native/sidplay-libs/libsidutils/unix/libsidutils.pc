@@ -1,0 +1,10 @@
+prefix=/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu
+exec_prefix=${prefix}
+libdir=/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/lib
+includedir=/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include
+
+Name: libsidutils
+Description: Utils for supporting the libsidplay2 library.
+Version: 1.0.4
+Libs: ${libdir}/libsidutils.la
+Cflags: -DHAVE_UNIX -I${includedir}

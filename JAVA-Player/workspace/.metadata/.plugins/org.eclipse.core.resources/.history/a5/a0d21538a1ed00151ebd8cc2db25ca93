@@ -1,0 +1,93 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+
+public class MaskCreator {
+
+	float videoSecondsCounter = 0;
+	float audioSecondsCounter = 0;
+	List<data> points;
+	enum Command {
+		opWait,
+		opRate,
+		opPause,
+		opPlay,
+		opSeek
+	}
+	class Operation {
+		public Command op;
+		public float num;
+		public Operation(Command o, float n){
+			op = o;
+			num = n;
+		}
+	}
+	List<Operation> audioMask = new ArrayList<Operation>();
+	List<Operation> videoMask = new ArrayList<Operation>();
+	public MaskCreator(List<data> pList){
+		points = pList;
+	}
+	
+	void doMaskFiles(){
+		Collections.sort(points);
+		points.add(new data());
+		// TODO 1. add last point to be the last second in video
+		//		2. add dummy point as first second (second 0).
+		for(int i = 0; i< points.size() - 1; i++){
+			data currentData = points.get(i);
+			float soundRate = currentData.soundRate;
+			float videoRate = currentData.videoRate;
+			data.SyncType sType = currentData.type;
+			float duration = points.get(i+1).startInSeconds - currentData.startInSeconds ;
+			
+			switch(sType)
+			{
+			case SyncTypeDontWait :
+				audioMask.add(new Operation(Command.opRate, soundRate));
+				audioMask.add(new Operation(Command.opWait, duration/soundRate));
+				videoMask.add(new Operation(Command.opRate, videoRate));
+				videoMask.add(new Operation(Command.opWait, duration/videoRate));
+				audioSecondsCounter += duration/soundRate;
+				videoSecondsCounter += duration/videoRate;
+				break;
+			case SyncTypeWait :
+				audioMask.add(new Operation(Command.opRate, soundRate));
+				audioMask.add(new Operation(Command.opWait, duration/soundRate));
+				videoMask.add(new Operation(Command.opRate, videoRate));
+				videoMask.add(new Operation(Command.opWait, duration/videoRate));
+				audioSecondsCounter += duration/soundRate;
+				videoSecondsCounter += duration/videoRate;
+				if(audioSecondsCounter > videoSecondsCounter){
+					audioMask.add(new Operation(Command.opPause,0.f)); // pause, wait, play
+					audioMask.add(new Operation(Command.opWait, 
+							(audioSecondsCounter - videoSecondsCounter)/videoRate)); // audio waits for video
+					audioMask.add(new Operation(Command.opPlay,0.f)); // pause, wait, play
+				} else if (audioSecondsCounter < videoSecondsCounter){
+					videoMask.add(new Operation(Command.opPause,0.f)); // pause, wait, play
+					videoMask.add(new Operation(Command.opWait, 
+							(videoSecondsCounter - audioSecondsCounter)/soundRate)); // audio waits for video
+					videoMask.add(new Operation(Command.opPlay,0.f)); // pause, wait, play
+				}
+				break;
+			case SyncTypeJump:
+				audioMask.add(new Operation(Command.opRate, soundRate));
+				audioMask.add(new Operation(Command.opWait, duration/soundRate));
+				videoMask.add(new Operation(Command.opRate, videoRate));
+				videoMask.add(new Operation(Command.opWait, duration/videoRate));
+				audioSecondsCounter += duration/soundRate;
+				videoSecondsCounter += duration/videoRate;
+				if(audioSecondsCounter > videoSecondsCounter){
+					videoMask.add(new Operation(Command.opSeek, audioSecondsCounter - videoSecondsCounter));
+					videoSecondsCounter = audioSecondsCounter;
+				} else if (audioSecondsCounter < videoSecondsCounter){
+					audioMask.add(new Operation(Command.opSeek,  videoSecondsCounter - audioSecondsCounter));
+					videoSecondsCounter = audioSecondsCounter;
+				}
+			}
+			
+			
+		}
+	}
+	
+}

@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+
+/**
+ * @author admin
+ *
+ */
+public class syncPoints {
+	enum SyncType
+	{
+		SyncTypeDontWait,
+		SyncTypeWait
+	}
+	
+	public class data
+	{
+		int startInSeconds;
+		int durationInSeconds;
+		float videoRate;
+		float soundRate;
+		SyncType type;
+		
+		@Override
+		public boolean equals(Object obj) {
+			// TODO Auto-generated method stub
+			return super.equals(obj);
+		}
+	}
+}

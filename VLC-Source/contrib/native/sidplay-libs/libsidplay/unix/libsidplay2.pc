@@ -1,0 +1,11 @@
+prefix=/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu
+exec_prefix=${prefix}
+libdir=/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/lib
+includedir=/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/include
+builders=/home/vlc/vlcProject/vlc-2.2/contrib/x86_64-linux-gnu/lib/sidplay/builders
+
+Name: libsidplay
+Description: C64 cycle exact stereo sidplayer library.
+Version: 2.1.1
+Libs: ${libdir}/libsidplay2.la
+Cflags: -DHAVE_UNIX -I${includedir}

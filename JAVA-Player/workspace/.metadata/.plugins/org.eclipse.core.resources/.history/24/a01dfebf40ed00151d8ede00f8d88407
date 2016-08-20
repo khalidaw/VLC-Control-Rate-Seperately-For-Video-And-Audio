@@ -1,0 +1,14 @@
+import java.util.List;
+
+
+public class MaskCreator {
+
+	int videoSecondsCounter;
+	int audioSecondsCounter;
+	List<data> points;
+	
+	public MaskCreator(List<data> pList){
+		points = pList;
+	}
+	
+}

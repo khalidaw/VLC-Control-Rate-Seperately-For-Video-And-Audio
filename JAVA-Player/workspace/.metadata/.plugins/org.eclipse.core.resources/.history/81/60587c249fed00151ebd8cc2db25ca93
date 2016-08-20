@@ -1,0 +1,73 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+
+public class MaskCreator {
+
+	float videoSecondsCounter = 0;
+	float audioSecondsCounter = 0;
+	List<data> points;
+	enum Command {
+		opWait,
+		opRate,
+		opPause,
+		opPlay
+	}
+	class Operation {
+		public Command op;
+		public float num;
+		public Operation(Command o, float n){
+			op = o;
+			num = n;
+		}
+	}
+	List<Operation> audioMask = new ArrayList<Operation>();
+	List<Operation> videoMask = new ArrayList<Operation>();
+	public MaskCreator(List<data> pList){
+		points = pList;
+	}
+	
+	void doMaskFiles(){
+		Collections.sort(points);
+		for(int i = 0; i< points.size(); i++){
+			data currentData = points.get(i);
+			float soundRate = currentData.soundRate;
+			float videoRate = currentData.videoRate;
+			data.SyncType sType = currentData.type;
+			float duration = points.get(i).startInSeconds - currentData.startInSeconds ;
+			
+			switch(sType)
+			{
+			case SyncTypeDontWait :
+				audioMask.add(new Operation(Command.opRate, soundRate));
+				audioMask.add(new Operation(Command.opWait, duration/soundRate));
+				videoMask.add(new Operation(Command.opRate, videoRate));
+				videoMask.add(new Operation(Command.opWait, duration/videoRate));
+				audioSecondsCounter += duration/soundRate;
+				videoSecondsCounter += duration/videoRate;
+				break;
+			case SyncTypeWait :
+				audioMask.add(new Operation(Command.opRate, soundRate));
+				audioMask.add(new Operation(Command.opWait, duration/soundRate));
+				videoMask.add(new Operation(Command.opRate, videoRate));
+				videoMask.add(new Operation(Command.opWait, duration/videoRate));
+				audioSecondsCounter += duration/soundRate;
+				videoSecondsCounter += duration/videoRate;
+				if(audioSecondsCounter > videoSecondsCounter){
+					audioSecondsCounter.add(new Operation(Command.opPause,0.f));
+					audioMask.add(new Operation(Command.opWait, 
+							(audioSecondsCounter - videoSecondsCounter)/videoRate)); // audio waits for video
+				} else if (audioSecondsCounter < videoSecondsCounter){
+					videoMask.add(new Operation(Command.opWait, 
+							(videoSecondsCounter - audioSecondsCounter)/soundRate)); // audio waits for video
+
+				}
+				break;
+			}
+			
+			
+		}
+	}
+	
+}

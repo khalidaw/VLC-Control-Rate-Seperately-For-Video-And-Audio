@@ -1,0 +1,24 @@
+/**
+ * 
+ */
+
+/**
+ * @author admin
+ *
+ */
+public class syncPoints {
+	enum SyncType
+	{
+		SyncTypeDontWait,
+		SyncTypeWait
+	}
+	
+	public class data
+	{
+		int startSeconds;
+		int seconds;
+		float videoRate;
+		float soundRate;
+		SyncType type;
+	}
+}
